@@ -1,0 +1,50 @@
+// sass --watch assets/css/castaway.scss:assets/css/castaway.css
+
+html {
+    font-size: 10px;
+}
+
+@mixin widthCenter {
+    max-width: 133rem;
+    margin: 0 auto;
+}
+
+.castaway {
+    background: #191919;
+
+    &-header {
+        @include widthCenter();
+    }
+
+    &-main {
+        @include widthCenter();
+
+    }
+
+    &-footer {
+        @include widthCenter();
+    }
+}
+
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem 0;
+    align-items: center;
+
+    &-menu {
+        display: flex;
+        gap: 4rem;
+
+        .menu-item {
+            text-decoration: none;
+            color: #fff;
+            
+
+            &.active {
+                color: #118DA8;
+            }
+        }
+    }
+}

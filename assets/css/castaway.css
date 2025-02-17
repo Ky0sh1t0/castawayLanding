@@ -1,0 +1,39 @@
+html {
+  font-size: 10px;
+}
+
+.castaway {
+  background: #191919;
+}
+.castaway-header {
+  max-width: 133rem;
+  margin: 0 auto;
+}
+.castaway-main {
+  max-width: 133rem;
+  margin: 0 auto;
+}
+.castaway-footer {
+  max-width: 133rem;
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7rem 0;
+  align-items: center;
+}
+.site-header-menu {
+  display: flex;
+  gap: 4rem;
+}
+.site-header-menu .menu-item {
+  text-decoration: none;
+  color: #fff;
+}
+.site-header-menu .menu-item.active {
+  color: #118DA8;
+}
+
+/*# sourceMappingURL=castaway.css.map */
