@@ -1,24 +1,84 @@
 // sass --watch assets/css/castaway.scss:assets/css/castaway.css
 
+
+// font
+@font-face {
+    font-family: "DMSans";
+    src: url('/assets/fonts/DMSans-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+// all
 html {
     font-size: 10px;
 }
 
+* {
+    font-family: "DMSans";
+    color: #fff;
+    margin: 0;
+}
+
+.pos_rel {
+    position: relative;
+}
+
+
+.headline-1 {
+    font-size: 7rem;
+    line-height: 1.26;
+    letter-spacing: 3.2px;
+    font-weight: 400;
+
+    .fs-bigger {
+        font-size: 7.5rem;
+    }
+
+    .fw-700 {
+        font-weight: 700;
+        font-size: 8rem;
+    }
+}
+
+.headline-2 {
+    font-size: 6.4rem;
+    line-height: 1.25;
+}
+
+.low_p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.btn {
+    font-size: 1.8rem;
+    background: #118DA8;
+    padding: 1.2rem 2rem 1.2rem 1.5rem;
+    text-decoration: none;
+    border-radius: .6rem;
+}
+
+// mixin
 @mixin widthCenter {
     max-width: 133rem;
     margin: 0 auto;
 }
 
+
+// the page
 .castaway {
     background: #191919;
 
     &-header {
         @include widthCenter();
+        margin-bottom: 4rem;
     }
 
-    &-main {
+    &-content {
         @include widthCenter();
-
+        max-width: 130rem;
     }
 
     &-footer {
@@ -40,11 +100,127 @@ html {
         .menu-item {
             text-decoration: none;
             color: #fff;
-            
+            font-size: 1.7rem;
+            line-height: 1.43;            
 
             &.active {
                 color: #118DA8;
             }
         }
     }
+}
+
+.castaway-main {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 9rem;
+
+    &-img {
+        border-radius: 1.6rem;
+        width: 65rem;
+        height: 80rem;
+        overflow: hidden;
+    }
+    
+    .top_img {
+        position: absolute;
+        top: -2.5rem;
+        left: -2.5rem;
+    }
+
+    &-text {
+        max-width: 51rem;
+        max-height: 61rem;
+        align-self: center;
+
+        .headline-1 {
+            margin-bottom: 9rem;
+        }
+
+        .underline {
+            position: absolute;
+            left: 0;
+            bottom: 17rem;
+        }
+
+        .low_p {
+            margin-bottom: 2rem;
+        }
+
+        .listen_on_links {
+            display: flex;
+            gap: 1.7rem;
+        }
+    }
+}
+
+.castaway-last-episode {
+    margin-bottom: 35rem;
+
+    .headline-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .episode-card {
+        display: flex;
+        gap: 5rem;
+        margin-bottom: 6rem;
+        border-radius: 3.2rem;
+        padding: 4rem;
+        background: #000000;
+
+        &-preview {
+            width: 39rem;
+            height: 46rem;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-text {
+            max-width: 66rem;
+        }
+
+        &-tag {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            padding: 0 1.6rem;
+            background: #191919;
+            margin-bottom: 5rem;
+            max-width: fit-content;
+            border-radius: .6rem;
+        }
+
+        &-part {
+            color: #118DA8;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            margin-bottom: 1.8rem;
+        }
+
+        &-title {
+            font-size: 6.4rem;
+            line-height: 1.1;
+            letter-spacing: .2rem;
+            margin-bottom: 2.8rem;
+            font-weight: 400;
+        }
+
+        &-description {
+            color: #FFFFFFB2;
+            font-size: 2.2rem;
+            line-height: 1.5;
+            margin-bottom: 2.8rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
 }

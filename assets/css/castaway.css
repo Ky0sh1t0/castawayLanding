@@ -1,5 +1,53 @@
+@font-face {
+  font-family: "DMSans";
+  src: url("/assets/fonts/DMSans-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 html {
   font-size: 10px;
+}
+
+* {
+  font-family: "DMSans";
+  color: #fff;
+  margin: 0;
+}
+
+.pos_rel {
+  position: relative;
+}
+
+.headline-1 {
+  font-size: 7rem;
+  line-height: 1.26;
+  letter-spacing: 3.2px;
+  font-weight: 400;
+}
+.headline-1 .fs-bigger {
+  font-size: 7.5rem;
+}
+.headline-1 .fw-700 {
+  font-weight: 700;
+  font-size: 8rem;
+}
+
+.headline-2 {
+  font-size: 6.4rem;
+  line-height: 1.25;
+}
+
+.low_p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.btn {
+  font-size: 1.8rem;
+  background: #118DA8;
+  padding: 1.2rem 2rem 1.2rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.6rem;
 }
 
 .castaway {
@@ -8,10 +56,12 @@ html {
 .castaway-header {
   max-width: 133rem;
   margin: 0 auto;
+  margin-bottom: 4rem;
 }
-.castaway-main {
+.castaway-content {
   max-width: 133rem;
   margin: 0 auto;
+  max-width: 130rem;
 }
 .castaway-footer {
   max-width: 133rem;
@@ -31,9 +81,108 @@ html {
 .site-header-menu .menu-item {
   text-decoration: none;
   color: #fff;
+  font-size: 1.7rem;
+  line-height: 1.43;
 }
 .site-header-menu .menu-item.active {
   color: #118DA8;
+}
+
+.castaway-main {
+  display: flex;
+  gap: 6rem;
+  margin-bottom: 9rem;
+}
+.castaway-main-img {
+  border-radius: 1.6rem;
+  width: 65rem;
+  height: 80rem;
+  overflow: hidden;
+}
+.castaway-main .top_img {
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+}
+.castaway-main-text {
+  max-width: 51rem;
+  max-height: 61rem;
+  align-self: center;
+}
+.castaway-main-text .headline-1 {
+  margin-bottom: 9rem;
+}
+.castaway-main-text .underline {
+  position: absolute;
+  left: 0;
+  bottom: 17rem;
+}
+.castaway-main-text .low_p {
+  margin-bottom: 2rem;
+}
+.castaway-main-text .listen_on_links {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.castaway-last-episode {
+  margin-bottom: 35rem;
+}
+.castaway-last-episode .headline-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.castaway-last-episode .episode-card {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 6rem;
+  border-radius: 3.2rem;
+  padding: 4rem;
+  background: #000000;
+}
+.castaway-last-episode .episode-card-preview {
+  width: 39rem;
+  height: 46rem;
+}
+.castaway-last-episode .episode-card-preview img {
+  width: 100%;
+  object-fit: cover;
+}
+.castaway-last-episode .episode-card-text {
+  max-width: 66rem;
+}
+.castaway-last-episode .episode-card-tag {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding: 0 1.6rem;
+  background: #191919;
+  margin-bottom: 5rem;
+  max-width: fit-content;
+  border-radius: 0.6rem;
+}
+.castaway-last-episode .episode-card-part {
+  color: #118DA8;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
+}
+.castaway-last-episode .episode-card-title {
+  font-size: 6.4rem;
+  line-height: 1.1;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2.8rem;
+  font-weight: 400;
+}
+.castaway-last-episode .episode-card-description {
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin-bottom: 2.8rem;
+}
+.castaway-last-episode .episode-card:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=castaway.css.map */
